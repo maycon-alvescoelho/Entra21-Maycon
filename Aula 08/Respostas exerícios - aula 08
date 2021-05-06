@@ -55,8 +55,6 @@ console.log(Boolean((A === 10 || B > 20) && B === 20)) // true
 console.log(null || 2 || undefined) // 2
 console.log(Boolean(0 && 1)) // false
 
-8) 
-
 
 9)
 let a = Number(prompt("Digite um número"))
@@ -67,11 +65,6 @@ if (a + b < 4){
     console.log("Acima")
 }
 
-10)
-
-
-11)
-
 
 12)
 let numero = Number(prompt("Digite um número"))
@@ -80,20 +73,6 @@ if (numero % 5 === 0) {
 } else {
     console.log("O número não é divisível por 5")
 }
-
-13)
-
-
-14)
-
-
-15)
-
-
-16)
-
-
-17)
 
 
 18)
