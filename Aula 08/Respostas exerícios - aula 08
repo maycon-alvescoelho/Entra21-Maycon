@@ -18,12 +18,177 @@ console.log(null === +"\n0\n") // false
 3)
 let valorA = Number(prompt("Digite o valo de A"))
 if (valorA > 10) {
-console.log("O valor A é maior que 10.")
+    console.log("O valor A é maior que 10.")
 }
 console.log("Programa finalizado...")
 
 4)
-
+let numero = Number(prompt("Digite um número"))
+if (numero % 2 === 0) {
+    numeroMetade = numero / 2
+    console.log(numeroMetade)
+}
+console.log("Programa finalizado...")
 
 5)
+let numero = Number(prompt("Digite um número"))
+if (numero % 2 === 0) {
+    console.log("O número é par.")
+} else {
+    console.log("O número é impar.")
+}
 
+6)
+let numero = Number(prompt("Digite um número"))
+if (numero > 20 && numero < 90) {
+    console.log("O número está na faixa entre 20 e 90")
+} else {
+    console.log("O número está fora da faixa")
+}
+
+7)
+let A = 10
+let B = 20
+console.log(Boolean(A > 10 && B <= 20)) // false
+console.log(Boolean(A > 10 || B <= 20)) // true
+console.log(Boolean((A === 10 || B > 20) && B === 20)) // true
+console.log(null || 2 || undefined) // 2
+console.log(Boolean(0 && 1)) // false
+
+8) 
+
+
+9)
+let a = Number(prompt("Digite um número"))
+let b = Number(prompt("Digite um número"))
+if (a + b < 4){
+    console.log("Abaixo")
+} else  {
+    console.log("Acima")
+}
+
+10)
+
+
+11)
+
+
+12)
+let numero = Number(prompt("Digite um número"))
+if (numero % 5 === 0) {
+    console.log("O número é divisível por 5")
+} else {
+    console.log("O número não é divisível por 5")
+}
+
+13)
+
+
+14)
+
+
+15)
+
+
+16)
+
+
+17)
+
+
+18)
+let numero = Number(prompt("Digite um número"))
+switch (numero) {
+    case 1:
+        console.log("O dia é domingo")
+        break
+    case 2:
+        console.log("O dia é segunda-feira")
+        break
+    case 3:
+        console.log("O dia é terça-feira")
+        break
+    case 4:
+        console.log("O dia é quarta-feira")
+        break
+    case 5:
+        console.log("O dia é quinta-feira")
+        break
+    case 6:
+        console.log("O dia é sexta-feira")
+        break
+    case 7:
+        console.log("O dia é sábado")
+        break
+    default:
+        console.log("O número digitado não corresponde à um dia")
+        break
+}
+
+19)
+let idade = Number(prompt("Qual sua idade?"))
+if ((idade > 18 || idade === 18) && (idade < 67 || idade === 67)) {
+    console.log("Você pode doar sangue.")
+} else {
+    console.log("Você não pode doar sangue.")
+}
+
+20) 
+let numero = Number(prompt("Digite um número"))
+switch (numero) {
+    case 1:
+        console.log("O mês é Janeiro")
+        break
+    case 2:
+        console.log("O mês é Fevereiro")
+        break
+    case 3:
+        console.log("O mês é Março")
+        break
+    case 4:
+        console.log("O mês é Abril")
+        break
+    case 5:
+        console.log("O mês é Maio")
+        break
+    case 6:
+        console.log("O mês é Junho")
+        break
+    case 7:
+        console.log("O mês é Julho")
+        break
+    case 8:
+        console.log("O mês é Agosto")
+        break
+    case 9:
+        console.log("O mês é Setembro")
+        break
+    case 10:
+        console.log("O mês é Outubro")
+        break
+    case 11:
+        console.log("O mês é Novembro")
+        break
+    case 12:
+        console.log("O mês é Dezembro")
+        break
+    default:
+        console.log("O número digitado não corresponde à um mês")
+        break
+}
+
+21)
+let numero = prompt("Em qual turno você estuda?\nM-matutino\nV-vespertino\nN-noturno").toUpperCase()
+switch (numero) {
+    case "M":
+        console.log("Bom Dia!")
+        break
+    case "V":
+        console.log("Boa Tarde!")
+        break
+    case "N":
+        console.log("Boa Noite!")
+        break
+    default:
+        console.log("Valor Inválido!")
+}
