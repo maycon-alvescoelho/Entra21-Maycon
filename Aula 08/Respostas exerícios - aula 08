@@ -55,6 +55,7 @@ console.log(Boolean((A === 10 || B > 20) && B === 20)) // true
 console.log(null || 2 || undefined) // 2
 console.log(Boolean(0 && 1)) // false
 
+8)
 
 9)
 let a = Number(prompt("Digite um número"))
