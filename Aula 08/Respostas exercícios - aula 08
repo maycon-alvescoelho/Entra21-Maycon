@@ -20,7 +20,7 @@ let valorA = Number(prompt("Digite o valo de A"))
 if (valorA > 10) {
     console.log("O valor A é maior que 10.")
 }
-console.log("Programa finalizado...")
+    console.log("Programa finalizado...")
 
 4)
 let numero = Number(prompt("Digite um número"))
@@ -28,7 +28,7 @@ if (numero % 2 === 0) {
     numeroMetade = numero / 2
     console.log(numeroMetade)
 }
-console.log("Programa finalizado...")
+    console.log("Programa finalizado...")
 
 5)
 let numero = Number(prompt("Digite um número"))
@@ -55,7 +55,7 @@ console.log(Boolean((A === 10 || B > 20) && B === 20)) // true
 console.log(null || 2 || undefined) // 2
 console.log(Boolean(0 && 1)) // false
 
-8)
+8) ** correção 
 
 9)
 let a = Number(prompt("Digite um número"))
@@ -66,6 +66,9 @@ if (a + b < 4){
     console.log("Acima")
 }
 
+10) ** correção
+
+11) ** correção
 
 12)
 let numero = Number(prompt("Digite um número"))
@@ -75,6 +78,15 @@ if (numero % 5 === 0) {
     console.log("O número não é divisível por 5")
 }
 
+13) ** correção
+
+14) ** correção
+
+15) ** correção
+
+16) ** correção
+
+17) ** correção
 
 18)
 let numero = Number(prompt("Digite um número"))
