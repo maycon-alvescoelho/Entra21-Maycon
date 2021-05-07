@@ -16,3 +16,33 @@ for (let i = 0 ; i < 10; i++) {
 }
 
 2) 
+let i = 0 
+while ( i < 10) {
+	console.log("Estou aparecendo pela ${++i} na tela!")
+	i++
+}
+
+
+let i = 0
+do {
+	conole.log("Estou aparecendo pela ${++i} na tela!")
+} while ( i = 10)
+
+
+for (let i = 0; i < 10; i++) {
+	console.log("Estou aparecendo pela ${i + 1} na tela!")
+}
+
+
+
+9)
+
+let quantidadeNegativos = 0
+for (let i = 0; i < 5; i++) {
+	let valor = +prompt("Digite um valor")
+	
+	if (valor < 0) {
+		quantidadeNegativos++
+	}
+}
+console.log(quantidadeNegativos)
