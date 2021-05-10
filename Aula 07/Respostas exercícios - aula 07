@@ -7,7 +7,6 @@ console.log(Boolean(null)) // false
 2)
 console.log(10 > 2) // true
 console.log(5 >= "5") // true
-console.log(5 >= "5") // true
 console.log("apple" > "pineapple") // false
 console.log("2" > "12") // true 
 console.log(undefined == null) // true
