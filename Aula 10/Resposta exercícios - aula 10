@@ -21,6 +21,7 @@ while (i < 10) {
 	console.log(`Estou aparecendo pela ${i++} na tela`)
 }
 
+3)
 
 
 
