@@ -21,12 +21,36 @@ while (i < 10) {
 	console.log(`Estou aparecendo pela ${i++} na tela`)
 }
 
+let i = 0
+do {
+    console.log(`Estou aparecendo pela ${i++} na tela`)
+} while (i < 10)
+
+for (let i = 0; i < 10; i++) {
+    console.log(`Estou aparecendo pela ${i} na tela`)
+}
+
 3)
 
+4)
+for (let i = 0; i < 3; i++) {
+let numero1 = +prompt("Digite o primeiro número")
+let numero2 = +prompt("Digite o segundo número")
 
+let subtracao = numero1 - numero2
+
+console.log(`${numero1} - ${numero2} = ${subtracao}`)
+}
+
+5)
+
+6)
+
+7)
+
+8)
 
 9)
-
 let quantidadeNegativos = 0
 for (let i = 0; i < 5; i++) {
 	let valor = +prompt("Digite um valor")
@@ -36,3 +60,18 @@ for (let i = 0; i < 5; i++) {
 	}
 }
 console.log(quantidadeNegativos)
+
+10)
+let quantidadePares = 0
+let quantidadeImpares = 0
+for (let i = 0; i < 10 ; i++) {
+    let valor = +prompt("Digite um valor")
+
+    if (valor % 2) {
+        quantidadePares++ 
+    } else {
+        quantidadeImpares++
+    }
+}
+console.log(`Pares: ${quantidadePares}`)
+console.log(`Ímpares: ${quantidadeImpares}`)
