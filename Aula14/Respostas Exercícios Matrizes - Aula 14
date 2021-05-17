@@ -1,4 +1,46 @@
 1)
+let matriz = []
+let quantidadeMaior10 = 0
+for (let i = 0; i < 3; i++) {
+    matriz[i] = []
+    for (let j = 0; j < 3; j++) {
+        matriz[i][j] = +prompt("Digite um número")
+
+        if (matriz[i][j] > 10) {
+            quantidadeMaior10++
+        }
+    }
+}
+console.log(`A quantidade de elementos digitados que são maiores que 10 é: ${quantidadeMaior10}`)
+
+2)
+let matriz = []
+for (let linha = 0; linha < 5; linha++) {
+    matriz[linha] = []
+    for (let coluna = 0; coluna < 5; coluna++) {
+        matriz[linha][coluna] = +prompt("Digite um número")
+    }
+}
+console.log(matriz)
+
+Matriz obtida:
+[1, 0, 0, 0, 0]
+[0, 1, 0, 0, 0]
+[0, 0, 1, 0, 0]
+[0, 0, 0, 1, 0]
+[0, 0, 0, 0, 1]
+
+3)
+
+
+4)
+
+
+5)
+
+
+6)
+
 
 
 
