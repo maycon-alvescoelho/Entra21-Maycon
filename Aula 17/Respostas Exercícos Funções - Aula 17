@@ -1,0 +1,20 @@
+1) 
+
+2)
+let valorA = +prompt("Digite um número")
+let valorB = +prompt("Digite um número")
+
+let mostraAcesso
+if (valorA < valorB) {
+    mostraAcesso = function() {
+        alert("O menor valor é o A")
+    }
+} else {
+    mostraAcesso = function() {
+        alert("O menor valor é o B")
+    }
+}
+mostraAcesso()
+
+3)
+
