@@ -1,4 +1,4 @@
-1) Leia um vetor de 10 posições. Calcule e escreva quantos valores pares ele possui.
+                                                                                                                                                                               1) Leia um vetor de 10 posições. Calcule e escreva quantos valores pares ele possui.
 
 
 2) Escreva um programa que leia 5 numeros e os armazene em um vetor. Mostre o vetor, o 
@@ -23,8 +23,7 @@ de pessoa. Escrever a mensagem “ACHEI”, se o nome estiver armazenado no veto
 O programa deve executar os seguintes passos:
 
 (a) Atribua os seguintes valores a esse vetor: 1, 0, 5, -2, -5, 7.
-(b) Armazene em uma variavel a soma entre os valores das posições A[0], 
-A[1] e A[5] do vetor e mostre na tela esta soma.
+(b) Armazene em uma variavel a soma entre os valores das posições A[0], A[1] e A[5] do vetor e mostre na tela esta soma.
 (c) Modifique o vetor na posição 4, atribuindo a esta posição o valor 100.
 (d) Mostre na tela cada valor do vetor A, um em cada linha.
 

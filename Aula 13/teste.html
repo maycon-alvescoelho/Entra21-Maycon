@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let media = +prompt("Informe a média do aluno");
+
+        function conceito(media){
+            let resultado 
+
+            if (media < 0 || media > 10){
+                resultado = "Média inválida";
+            } else if (media < 5){
+                resultado = "D";
+            } else if (media < 7){
+                resultado = "C";
+            } else if (media < 9){
+                resultado = "B";
+            } else if (média < 10) {
+                resultado = "A";
+            }
+        }
+        console.log(conceito(media));
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+1)
+let vetor = [], quantidadePares = 0
+for (let i = 0; i < 10; i++) {
+    vetor[i] = +prompt("Digite um número")
+
+    if (vetor[i] % 2 === 0) {
+        quantidadePares++
+    }
+}
+
+console.log(`Quantidade de números pares: ${quantidadePares}`)
+
+2) 
+let vetor = [],
+    maior,
+    posicao = 0
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)
+    if (i === 0) {
+        maior = vetor[i]
+    } else if (vetor[i] > maior) {
+        maior = vetor[i]
+        posicao = i
+    }
+}
+console.log(`Vetor: ${vetor}\nMaior valor: ${maior}\nPosição no vetor: ${posicao}`)
+
+3)
+let vetor = [],
+    maior = 0,
+    menor = 0
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)
+    if (i === 0) {
+        maior = vetor[i]
+        menor = vetor[i]
+    } else if (vetor[i] > maior) {
+        maior = vetor[i]
+    } else if (vetor[i] < menor) {
+        menor = vetor[i]
+    }
+}
+console.log(`Vetor: ${vetor}\nMaior valor: ${maior}\nMenor valor: ${menor}`)
+
+4) 
+let vetor = [],
+    vetorInverso = []
+
+for (let i = 0; i < 5; i++) {
+    vetor[i] = +prompt(`Digite o ${i + 1} valor do vetor`)
+    vetorInverso [4 - i] = vetor[i]
+
+}
+console.log(`Vetor: ${vetor}\nVetor inverso: ${vetorInverso}`)
+
+5) 
+let nomes = [] 
+for (let i = 0; i < 5; i++) {
+    nomes[i] = prompt("Digite um nome")
+}
+
+let nomeProcurado = prompt("Digite o nome desejado")
+
+let achou
+for (let i = 0; i < 5; i++) {
+    if (nomes[i] === nomeProcurado) {
+        console.log("Achei!")
+        achou = true
+        break
+    } 
+}
+
+console.log(`Nomes: ${nomes}`)
+if (!achou) console.log("Não achei!")
+
+6) 
+let vetorA = [1, 0, 5, -2, -5, 7]
+let soma = vetorA[0] + vetorA[1] + vetorA[5]
+
+vetorA [4] = 100
+
+for (let i = 0, tamanhoVetor = vetorA.length; i < tamanhoVetor; i++) {
+    console.log(vetorA[i])
+} 
+
+7)
+let numeros = [],
+    numerosQuadrado = []
+
+for (let i = 0; i < 5; i++) {
+    numeros[i] = prompt("Digite um número")
+    numerosQuadrado[i] = numeros[i] ** 2 
+} 
+
+console.log(`Original: ${numeros}\nNumeros quadrados: ${numerosQuadrado}`)
+
+8) 
+
+9)
+
+10)
+
+11)
+
+12)
+
+13)
+
+14)
+
+15)
+
+16)
+
+17)
+
+18)
+
+19)
+
+20)
+
+21)
