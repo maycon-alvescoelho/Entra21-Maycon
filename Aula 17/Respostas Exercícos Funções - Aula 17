@@ -17,4 +17,269 @@ if (valorA < valorB) {
 mostraAcesso()
 
 3)
+let a = +prompt("Informe o valor de A"),
+let b = +prompt("Informe o valor de B");
+
+let potencia = (a, b) => console.log(a ** b);
+potencia(a, b);
+
+4)
+let a = +prompt("Informe a primeira nota"),
+let b = +prompt("Informe a segunda nota"),
+let c = +prompt("Informe a terceira nota");
+
+let media = (a, b, c) => console.log(`A média é ${((a + b + c) / 3).toFixed(2)}`);
+
+media(a, b, c);
+
+5)
+let media = +prompt("Informe a média do aluno");
+
+function conceito(media){
+    if (media >= 0 && media < 5){
+        return "D";
+    } else if (media >= 5 && media < 7){
+        return "C";
+    } else if (media >= 7 && media < 9){
+        return "B";
+    } else if (media >= 9 && media <= 10){
+        return "A";
+    }
+    return "Insira um valor válido";
+}
+console.log(conceito(media));
+
+6)
+let altura = +prompt("Informe sua altura"),
+    sexo = String(prompt("Informe seu sexo: M - Masculino; F - Feminino").toUpperCase());
+
+let pesoIdeal = (altura, sexo) => sexo === "M" ? 72.7 * altura - 58 : 62.1 * altura - 44.7;
+console.log(pesoIdeal(altura, sexo).toFixed(2));
+
+7)
+let vetor = [];
+let last = 0;
+for (let i = 0; i > -1; i++){
+    vetor[i] = prompt("Informe um valor");
+    if (vetor[i] === "A"){
+        last = i;
+        break;
+    }
+}
+console.log(vetor);
+    
+function primeiroUltimo(FL){
+    FL = [];
+    FL[0] = vetor[0];
+    FL[1] = vetor[last - 1];
+    return FL;
+}
+console.log(primeiroUltimo(vetor));
+
+8)
+let quantidade = +prompt("Informe a quantidade a ser repetida");
+let vetor = [];
+function mostraSimbolo(quantidade){
+    for (let i = 0; i < quantidade; i++){
+        vetor.push("#");
+    }
+}
+mostraSimbolo(quantidade);
+console.log((vetor).toString());
+
+9)
+let palavraQuantidade = [];
+let vetor = [];
+for (let i = 0; i < 2; i++){
+    if (palavraQuantidade[i] == 0){
+        palavraQuantidade[i] = prompt("Informe a palavra");
+    } else {
+        palavraQuantidade[i] = prompt("Informe o número de vezes que se repetirá");
+    }
+}
+function mostraPalavra(palavra, quantidade){
+    for (let i = 0; i < quantidade; i++){
+        vetor.push(palavra);
+    }
+}
+
+mostraPalavra(palavraQuantidade[0], palavraQuantidade[1]);
+
+console.log(vetor);
+
+10)
+let idade = (ano) => 2021 - anoNasc;
+let anoNasc = +prompt("Informe o ano em que você nasceu");
+
+console.log(idade(anoNasc));
+
+11)
+function troca(){
+vetorModificado[1] = 10;
+vetorModificado[2] = 30;
+}
+let vetor = [],
+vetorModificado = [];
+
+for (let i = 0; i < 5; i++){
+vetor[i] = Math.floor(Math.random() * (100 - 1)) + 1;
+vetorModificado[i] = vetor[i];
+}
+troca();
+console.log(vetor, vetorModificado);
+
+12)
+let vetor = []; 
+let maior = 0;
+let menor = 1000;
+for (let i = 0; i < 50; i++){
+    vetor[i] = Math.floor(Math.random() * (1000 - 1)) + 1;
+}
+function maiorMenor(vetor){
+
+    for (let i = 0; i < 50; i++){
+        if (vetor[i] > maior){
+            maior = vetor[i];
+        } else if (vetor[i] < menor){
+            menor = vetor[i];
+        }
+    }
+}
+maiorMenor(vetor);
+console.log(maior, menor);
+
+13)
+let vetorIdade = [];
+for (let i = 0; i < 3; i++){
+    vetorIdade[i] = +prompt("Informe primeiro o ano, em seguida os meses e os dias");
+}
+function idadeDias(vetorIdade){
+    let idade = 0;
+    idade += vetorIdade[0] * 365;
+    idade += vetorIdade[1] * 30;
+    idade += vetorIdade[2];
+    
+    return idade;
+}
+console.log(idadeDias(vetorIdade));
+
+14)
+function checkDivisor(num){
+let divisores = [];
+for (let i = num; i > 0; i--){
+    if(num % i === 0){
+        divisores.push(i);
+    }
+}
+return divisores;
+}
+let numero = 0;
+for (let i = 1; i > 0; i++){
+numero = +prompt("Informe um número");
+if (numero > 0 && Number.isInteger(numero)){
+    break;
+}
+console.log("Informe um valor válido");
+}
+console.log(checkDivisor(numero));
+
+15) 
+let numero = 0;
+for (let i = 1; i > 0; i++){
+    numero = +prompt("Informe um número");
+    if (numero > 0 && Number.isInteger(numero)){
+        break;
+    }
+    console.log("Informe um valor válido");
+}
+function fatorial(num){
+    let resultado = num;
+    for (let i = num; i > 1; i--){
+        resultado *= i - 1;
+    }
+    return resultado;
+}
+console.log(fatorial(numero));
+
+16) 
+function checkPerfeito(num){
+let final = 0;
+for (let i = num; i > 0; i--){
+    if(num % i === 0){
+        final += i;
+    }
+}
+if (num === (final - num)){
+    return true;
+}
+return false;
+}
+
+let numero = +prompt("Informe um numero");
+console.log(checkPerfeito(numero));
+
+17)
+let vetor = [],
+vetorInverso = [];
+for (let i = 0; i < 50; i++){
+vetor[i] = Math.floor(Math.random() * (10 - 1)) + 1;
+}
+function ordenar(numeros){
+numeros.sort();
+return numeros;
+}
+ordenar(vetor);
+for (let i = 0; i < 50; i++) {
+vetorInverso[49 - i] = vetor[i]            
+}
+console.log(vetorInverso);
+
+18)
+let valores = [];
+for (let i = 0; i < 3; i++){
+    valores[i] = +prompt(`Informe o ${i + 1}º parâmetro`);
+}
+function bhaskara(parametros){
+    let delta = (parametros[1] ** 2 - 4 * parametros[0] * parametros[2]),
+        raizes = [];
+
+    if (delta < 0){
+        return "Cálculo impossível";
+    }
+    
+    raizes.push((-parametros[1] + Math.sqrt(delta)) / 2 * parametros[0]);
+    raizes.push((-parametros[1] - Math.sqrt(delta)) / 2 * parametros[0]);
+    
+    return raizes;
+}
+
+console.log(bhaskara(valores));
+
+19)
+let vetor = [];
+for (let i = 0; i < 50; i++){
+    vetor[i] = Math.floor(Math.random() * (10 - 1)) + 1;
+}
+function paresPares(vetor){
+    let pares2x = [];
+    for(let i = 0; i < 50; i++){
+        if((vetor[i] % 2 === 0) && (i % 2 === 0)){
+            pares2x.push(vetor[i]);
+        }
+    }
+    return pares2x;
+}
+console.log(paresPares(vetor));
+20)
+let numero = +prompt("Informe um numero");
+function sortear(num){
+    let sorteado = Math.floor(Math.random() * (10 - 1)) + 1;
+    if(sorteado == num){
+        return `Parabéns! O número sorteado foi o ${sorteado}`;
+    }
+    return `Que pena! O número sorteado foi o ${sorteado}`; 
+}
+console.log(sortear(numero));
+
+21)
 
