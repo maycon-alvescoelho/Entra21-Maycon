@@ -1,0 +1,89 @@
+<head>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #div-legenda {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+
+        .legenda {
+            position: absolute;
+            background-color: rgb(8, 145, 145);
+            color: white;
+            border: 1px solid rgb(2, 100, 95);
+            box-sizing: border-box;
+            width: 200px;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>            
+    <div id="div-legenda">Adicione uma legenda nesse elemento</div>    
+    <script>
+        function mostraLegenda(elemento, posicao, texto) {
+            // Criar a legenda
+            let legenda = document.createElement("div")
+
+            // Adicionar o texto na div
+            legenda.textContent = texto
+
+            // Adicionar um estilo para a legenda
+            legenda.className = "legenda"
+
+            // Obter coordenadas do elemento
+            let coords = obterCoordenadas(elemento)
+
+            
+            // Posicionar o elemento (top, left)
+            switch (posicao) {
+                case "acima":                    
+                    legenda.style.top = coords.top - 30 + "px"
+                    break
+               case "direita":                                
+                    legenda.style.top = coords.top + "px"
+                    legenda.style.left = coords.left + elemento.offsetWidth + "px"
+                    break
+                case "abaixo":                                        
+                    legenda.style.top = coords.bottom + "px"
+                    legenda.style.left = coords.left + "px"
+                    break
+                case "esquerda":
+                    legenda.style.left = coords.left + "px"
+                    legenda.style.left = coords.left - elemento.offsetWidth + "px"
+                    break 
+            }
+
+            // Adicionar elemento na tela
+            document.body.append(legenda)
+        }
+
+        function obterCoordenadas(elemento) {
+            let coords = elemento.getBoundingClientRect()
+
+            return {
+                top: coords.top + window.pageYOffset,
+                right: coords.right + window.pageXOffset,
+                bottom: coords.bottom + window.pageYOffset,
+                left: coords.left + window.pageXOffset
+            }
+        }
+
+        // Selecionando a div
+        let div = document.querySelector("#div-legenda")
+
+        mostraLegenda(div, "esquerda", "teste")
+    </script>
+</body>
+
+
+
+
