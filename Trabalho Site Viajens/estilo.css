@@ -136,22 +136,10 @@ ul {
     width: 2.25em;
     height: 2.25em;
     line-height: 2.25em;
-    border: solid 1px rgb(6, 235, 25);
+    border: solid 1px rgb(255, 251, 0);
     border-radius: 100%;
 }
 
-.feature__icon--1 {
-    color: #efa8b0;
-}
-
-
-.feature__icon--2 {
-    color: #a89cc8;
-}
-
-.feature__icon--3 {
-    color: #8cc9f0;
-}
 
 .statistics {    
     list-style-type: none;
@@ -180,26 +168,6 @@ ul {
 
 .statistics strong {
     font-size: 2.5rem;
-}
-
-.statistics__item--1 {
-    background-color: #efa8b0;
-}
-
-.statistics__item--2 {
-    background-color: #c79cc8;
-}
-
-.statistics__item--3 {
-    background-color: #a89cc8;
-}
-
-.statistics__item--4 {
-    background-color: #9bb2e1;
-}
-
-.statistics__item--5 {
-    background-color: #8cc9f0;
 }
 
 .statistics__text {
