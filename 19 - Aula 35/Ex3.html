@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        div {
+            position: absolute;
+            top: 6000px
+        }
+    </style>
+</head>
+<body>
+    <button id="voltar" hidden>Voltar</button>
+    <div>escondido</div>
+    <script>
+        let botaoVoltar = document.querySelector("#voltar")
+        botaoVoltar.addEventListener("click", () => {
+            window.scrollTo(pageXOffset, 0)
+            // ou window.scrollTo(0, 0)
+        })
+
+        window.addEventListener('scroll', function () {
+            botaoVoltar.hidden = pageYOffset < document.documentElement.clientHeight
+            botaoVoltar.style.position = "relative"
+            botaoVoltar.style.top =  pageYOffset + "px"
+        })
+    </script>
+</body>
+</html>

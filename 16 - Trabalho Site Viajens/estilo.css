@@ -18,6 +18,13 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 300;
 }
 
+#moldura {
+    width: 600px;
+    height: 450 px;
+    background-color: #eeeeee;
+    transition-background-image 2s;
+}
+
 ul {
     margin: 0;
     padding-left: 0;

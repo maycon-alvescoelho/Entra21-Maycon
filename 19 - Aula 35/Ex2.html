@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <script>
+
+        function rodaNasTeclas(func, code1, code2, ...codeN) {
+        let teclasPressionadas = new Set()
+
+            document.addEventListener('keydown', function(event) {
+                teclasPressionadas.add(event.code)
+
+                for (let code of codes) {
+                    if (!teclasPressionadas.has(code)) {
+                        return
+                    }
+                }
+
+                teclasPressionadas.clear()
+
+                func()
+            })
+
+            document.addEventListener('keyup', function(event) {
+                teclasPressionadas.delete(event.code)
+            })
+        }
+
+        rodaNasTeclas(
+            () => alert("Olá!"),
+            "keyQ",
+            "keyW"
+        )
+    </script>
+</body>
+</html>

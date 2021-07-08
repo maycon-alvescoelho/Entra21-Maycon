@@ -38,6 +38,31 @@
             <br>
 
             <main id="main">
+                <head>
+                    <script>
+                
+                        function iniciaSlider() {
+                            max=3;
+                            min=1;
+                            carregaFoto()
+                        }
+                
+                        function carregaFoto(foto){
+                            document.getElementById("moldura").style.backgroundImage="URL("+foto+"")
+                        }
+                
+                        function prox
+                
+                    </script>
+                </head>
+                <body onload="iniciaSlider()">
+                
+                    <div id="moldura"></div>
+                    <input type="button" value="Anterior"/>
+                    <input type="button" value="Próximo"/>
+                
+                </body>
+                
             <section id="features" class="main">
 
                 <h2 class="main__title">África do Sul</h2>                
